@@ -1,11 +1,5 @@
 // Press tab to see functions
 
-
-
-
-
-
-
   var canvasX =700
   var canvasY =700
 
