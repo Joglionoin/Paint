@@ -20,23 +20,11 @@ function setup() {
   var y1
   var y2
   var savedcolour
- 
-
-  
   stroke('red')
   fill('red')
   slide = createSlider(1,30,5)
   slide.position(250,675)
   slide.style('width','100px')
-  
- 
-  
-  
-  
-  
-  
-  
- 
 }
 
 function draw() {
@@ -44,23 +32,16 @@ function draw() {
   y1 = mouseY
   x2 = pmouseX
   y2 = pmouseY
-
-
   textSize(15)
-  if (mouseIsPressed && mouseButton == LEFT) {
-    
+  if (mouseIsPressed && mouseButton == LEFT) 
+  {  
     stroke(c)
     stroke1 = slide.value()
     strokeWeight(slide.value())
-    line(x1,y1,x2,y2)
-    
-
-    
+    line(x1,y1,x2,y2) 
   }
     
     noStroke()
-
-    
     
     //buttons
     fill('red')
@@ -124,47 +105,17 @@ function draw() {
     if (mouseX > 450 && mouseX < 500 && mouseY > 0 && mouseY < 50 && mouseIsPressed && mouseButton == LEFT){
       
       
-      
       c = color(random(0,255),random(0,255),random(0,255))
       index = true
-        
       
     }
    // save random colour
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
     fill(0)
     rect(500,0,50,50)
     if (mouseX < 550 && mouseX > 500 && mouseY < 50 && mouseY > 0 && mouseIsPressed && mouseButton == LEFT) {
       
       c = 0 
-      
-      
-      
-      
     }
-  
-  
     //eraser
     fill(125)
     ellipse(575,25,50,50)
@@ -176,15 +127,6 @@ function draw() {
       c = 150
     }
     
-     
-      
-    
-  
-  
-    
-  
-    
-  
     //clear
     fill(0)
     rect(width-50,0,50,50)
@@ -207,12 +149,6 @@ function draw() {
       if (mouseIsPressed && mouseButton === LEFT){
         slide.value(5)
       }
-      
-      
-      
-  
-      
-    
     }
   
   
